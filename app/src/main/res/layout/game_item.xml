@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="getGames"
+    tools:context="com.example.user.favouritegames.GameActivity">
+
+
+    <TextView
+        android:id="@+id/rankingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="40sp"
+        tools:text="ranking"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/rankingTv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title"/>
+
+    <TextView
+        android:id="@+id/yearTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintLeft_toRightOf="@+id/rankingTv"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        tools:text="Year" />
+
+</android.support.constraint.ConstraintLayout>
